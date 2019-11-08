@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>시멘틱태그</title>
+</head>
+<body>
+    
+    <h2>section</h2>
+    <div class="well">일반적으로 문서의 콘텐츠 섹션을 의미한다.</div>
+    <ul>
+        <li>콘텐츠와 관련된 한가지 주제 영역을 말한다.</li>
+        <li>section요소는 문장이나 문서의 스타일링 요소가 아니기 때문에 편의를 위함이라면 div태그를 쓰는게 좋다.</li>
+        <li>section요소는 제목이 없는 경우는 섹션이라고 할 수 없기 때문에 제목을 제공해야 한다.</li>
+        <li>section요소는 일반적인 주제가 아니라면 구체적인 요소(article, aside, nav)를 사용하는 것이 더 적절하다.</li>
+    </ul>
+    
+    <h2>article</h2>
+    <div class="well">콘텐츠의 독립적인 항목을 나타내는 콘텐츠를 의미한다.</div>
+    <ul>
+        <li>article는 포럼, 신문기사, 잡지, 블로그 항목, 게시판 글 등은 콘텐츠의 독립적인 항목을 나타낸다.</li>
+        <li>seciton은 하나의 주제를 나타낸다면, article은 주제를 묶은 독립적인 콘텐츠입니다.</li>
+        <li>section요소 안에는 article을 쓸 수 있으며, article 요소 안에도 section요소를 쓸 수 있다.</li>
+    </ul>
+    
+    <h2>nav</h2>
+    <div class="well">페이지 내에서 이동 할 수 있는 네비게이션 링크 그룹이다.</div>
+    <ul>
+        <li>nav는 문서의 핵심적인 페이지의 메뉴 및 서브메뉴에서 사용하고, 문서에서 주로 한 번 사용한다.</li>
+        <li>문서 안에 링크가 포함된 콘텐츠는 nav를 사용하지 않는다.</li>
+        <li>nav는 핵심적인 네비게이션에 사용해야 하므로, 푸터 내에 링크 그룹의 사용은 적절하지 않다.</li>
+    </ul>
+    
+    <h2>main</h2>
+    <div class="well">웹 문서의 주요 콘텐츠 영역을 나타낼 때 사용한다.</div>
+    <ul>
+        <li>main 은 웹 페이지에서 한 번만 사용할 수 있으며, 접근성과 검색 영역의 노출을 향상시킨다.</li>
+        <li>article, aside, footer, header, nav를 하위 요소로 사용 할 수 있다.</li>
+    </ul>
+    
+    <h2>aside</h2>
+    <div class="well">웹 문서의 메인 콘텐츠와 관련된 사이트 콘텐츠 영역을 나타낸다.</div>
+    <ul>
+        <li>aside는 메인 콘텐츠와 관련된 사이트의 정보, 광고 등 부분적인 정보를 그룹화 할 때 사용한다.</li>
+    </ul>
+    
+    <h2>header</h2>
+    <div class="well">웹 문서의 헤더 영역을 나타낸다.</div>
+    <ul>
+        <li>header에는 웹 페이지에 대한 소개, 네비게이션 영역, 테이블 영역, 검색영역, 로고영역을 포함한 영역이다.</li>
+        <li>header에는 제목 태그가 포함 될 수 있으며, 필수 조건은 아니다.</li>
+        <li>header는 섹션 콘텐츠가 아닌 그룹화하기 위한 요소이므로, section 요소를 포함 할 수 없다.</li>
+    </ul>
+    
+    <h2>footer</h2>
+    <div class="well">웹 문서의 푸터 영역을 나타낸다.</div>
+    <ul>
+        <li>footer는 저작권 정보, 회사 정보, 관련 링크, 주소, 바닥글, 사이트 정보 등을 포함하는 콘텐츠 영역이다.</li>
+        <li>footer는 section 콘텐츠가 아닌 그룹을 나타내는 요소이며, seciton, article, aside등을 포함 할 수 있다.</li>
+    </ul>
+    
+    html5에서 새로 생긴 태그
+    html5에서 의미가 변한 속성 태그
+    html5에서 없어진 태그
+    
+    <h2>position:relative 를 사용해야하는 경우</h2>
+    <ul>
+        <li>position:absolute의 기준점으로 사용한다.</li>
+        <li>z-index를 사용해야하는 경우 포지션값이 없으면  relative를 사용해서 z-index값을 인식할 수 있다.</li>
+        <li>요소의 위치를 유지한채 left, top, bottom, right값의 위치 값을 사용하고 싶을 때</li>
+    </ul>
+</body>
+</html>
